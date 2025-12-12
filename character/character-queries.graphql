@@ -1,0 +1,86 @@
+# GraphQL Queries for Rick and Morty API
+# Endpoint: https://rickandmortyapi.com/graphql
+
+# Query for Character ID 1
+query GetCharacter1 {
+  character(id: 1) {
+    id
+    name
+    status
+    species
+    type
+    gender
+  }
+}
+
+# Query for Character ID 2
+query GetCharacter2 {
+  character(id: 2) {
+    id
+    name
+    status
+    species
+    type
+    gender
+  }
+}
+
+# Query for Character ID 3
+query GetCharacter3 {
+  character(id: 3) {
+    id
+    name
+    status
+    species
+    type
+    gender
+  }
+}
+
+# Query for Character ID 4
+query GetCharacter4 {
+  character(id: 4) {
+    id
+    name
+    status
+    species
+    type
+    gender
+  }
+}
+
+# Alternative: Query all characters in a single request using aliases
+query GetMultipleCharacters {
+  character1: character(id: 1) {
+    id
+    name
+    status
+    species
+    type
+    gender
+  }
+  character2: character(id: 2) {
+    id
+    name
+    status
+    species
+    type
+    gender
+  }
+  character3: character(id: 3) {
+    id
+    name
+    status
+    species
+    type
+    gender
+  }
+  character4: character(id: 4) {
+    id
+    name
+    status
+    species
+    type
+    gender
+  }
+}
